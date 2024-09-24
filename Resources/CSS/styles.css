@@ -213,3 +213,61 @@ section {
   left: 50%;
   transform: translate(-50%, -50%) rotate(315deg) translate(150px) rotate(-315deg);
 }
+
+/* circles */
+
+.container-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  /* margin: auto; */
+  width: 50%;
+  height: 31.25em;
+  padding: 1em 1em;
+  margin: 2em 2em;
+  overflow: hidden;
+}
+
+.circle,
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4 {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  z-index: 1;
+  width: 5%;
+  height: 7%;
+  background: #8D8D8D;
+  box-shadow: 0px 0px 4px 1px #fff;
+  transition: all 1.5s ease-in-out;
+}
+
+.circle {
+  top: 30px;
+}
+
+.circle-1 {
+  top: 130px;
+}
+
+.circle-2 {
+  top: 235px;
+}
+
+.circle-3 {
+  top: 340px;
+}
+
+.circle-4 {
+  top: 440px;
+}
+
+hr {
+  width: 70%;
+  transform: rotate(90deg);
+}
