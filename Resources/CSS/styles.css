@@ -456,3 +456,92 @@ h4:hover {
   transform: scale(1.1);
   transition: transform 0.9s ease;
 }
+
+/* media query */
+
+@media (max-width: 460px) {
+  .container-7 {
+    width: 100%; /* container will take full width */
+    gap: 20px; /* adjust gap as needed */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  };
+  .boxx {
+    width: 100%; /* box will take full width */
+    height: 150px; /* adjust height as needed */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  section {
+    padding: 1em;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content .text-box {
+    max-width: 100%;
+    padding: 1em;
+    transform: translate(0, 0);
+  }
+
+  .media-info {
+    width: 100%;
+    margin: 0;
+  }
+
+  .media-info li {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 1em 0;
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .container-2 {
+    width: 33.75em;
+    height: 21.25em;
+  }
+
+  .container-2 .circle,
+  .container-2 .circle-1,
+  .container-2 .circle-2,
+  .container-2 .circle-3,
+  .container-2 .circle-4 {
+    width: 5%;
+    height: 10%;
+  }
+
+  .container-2 .box {
+    width: 150px;
+    height: 150px;
+  }
+}
