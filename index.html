@@ -6,8 +6,10 @@
   <title>Porfolio Website</title>
   <link rel="stylesheet" href="Resources/CSS/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<>
+<body>
 
   <section class="sec-01">
     <div class="container">
@@ -30,49 +32,51 @@
     </div>
   </section>
 
-  <div class="text-title">
-    <h3 class="section-title"></h3>
+  <div class="text-title-2">
+    <h3 class="section-title-2">Certification</h3>
   </div>
-
-  <div class="container-2">
-    <hr/>
-    <div class="circle"><span></span></div>
-    <div class="circle-1"><span></span></div>
-    <div class="circle-2"><span></span><a href="Certification.html" target="_blank">CSS intro</a></div>
-    <div class="circle-3"><span></span></div>
-    <div class="circle-4"><span></span></div>
-
-  <div class="box box-1">
-    <a href="Resources/Certification/Certification 1.pdf" target="_blank">cert</a>
+  
+  <div class="container-5">
+    <div class="boxes">
+      <div class="box box-1">
+        <a href="Resources/Certification/Certification 1.pdf" target="_blank">FreeCodeCamp Cert</a>
+      </div>
+      <div class="box box-2"><a href="Resources/Certification/Learn HTML Course.pdf">HTML Intro</a>
+      </div>
+      <div class="box box-3">
+        <a href="Resources/Certification/Learn CSS Introduction.pdf" target="_blank">CSS Intro</a>
+      </div>
+      <div class="box box-4">
+        <a href="Resources/Certification-2/Learn CSS Browser Compatibility.pdf Line Cert.pdf" target="_blank">CSS Browser Compatibility</a>
+      </div>
+      <div class="box box-5">
+        <a href="Resources/Certification-2/Learn CSS Colors.pdf" target="_blank">CSS Colors</a>
+      </div>
+      <div class="box box-6"><a href="Resources/Certification-2/Learn CSS Flexbox and Grid.pdf">CSS Flexbox & Grid</a>
+      </div>
+      <div class="box box-7">
+        <a href="Resources/Certification-2/Learn CSS Responsive Design.pdf HTML Course.pdf" target="_blank">CSS Responsive Design</a>
+      </div>
+      <div class="box box-8">
+        <a href="Resources/Certification-2/Learn CSS Transitions and Animations.pdf" target="_blank">CSS Transitions & Animations</a>
+      </div>
+      <div class="box box-9">
+        <a href="Resources/Certification-2/Learn CSS Typography and Fonts.pdf" target="_blank">CSS Typography & Fonts</a>
+      </div>
+      <div class="box box-10">
+        <a href="Resources/Certification-2/Learn CSS Variables and Functions.pdf" target="_blank">CSS Variables & Functions</a>
+      </div>
+      <div class="box box-11"><a href="Resources/Certification-2/Learn Intermediate CSS.pdf" target="_blank">Intermediate CSS</a>
+      </div>
+      <div class="box box-12"><a href="Resources/Certification-2/Learn CSS Course.pdf" target="_blank">CSS Course</a>
+      </div>
+      <div class="box box-13"><a href="Resources/Certification-2/Intro to GitHub Copilot.pdf" target="_blank">Intro to Github Copilot</a>
+      </div>
+      <div class="box box-14"><a href="Resources/Certification-2/Introduction to Cybersecurity.pdf" target="_blank">Intro to Cybersecurity</a>
+      </div>
+    </div>
   </div>
-  <div class="box box-2">
-
-  </div>
-  <div class="box box-3">
-    <a href="Resources/Certification/Learn CSS Introduction.pdf" target="_blank">CSS intro</a>
-  </div>
-  <div class="box box-4">
-    <a href="Resources/Certification/Command Line Cert.pdf" target="_blank">Command line</a>
-  </div>
-  <div class="box box-5">
-    <a href="Resources/Certification/Learn Git Branching and Collaboration.pdf" target="_blank">Git Branching</a>
-  </div>
-  <div class="box box-6">
-
-  </div>
-  <div class="box box-7">
-    <a href="Resources/Certification/Learn HTML Course.pdf" target="_blank">HTML intro</a>
-  </div>
-  <div class="box box-8">
-    <a href="Resources/Certification/Deploying Websites using Git and GitHub.pdf" target="_blank">Deploying Websites</a>
-  </div>
-  <div class="box box-9">
-    <a href="Resources/Certification/Git Introduction Cert.pdf" target="_blank">Git intro</a>
-  </div>
-  <div class="box box-10">
-    <a href="Resources/Certification/GitHub Introduction Cert.pdf" target="_blank">Github intro</a>
-  </div>
-</div>
+  
 
 <section class="sec-02">
   <div class="container">
@@ -148,7 +152,47 @@
 				interval: 200 /*how to change the way it scrolls*/,
 			});
 
-      
+      // circles
+
+      ScrollReveal().reveal('.circle', {
+				delay: 100,
+				origin: 'top' /*how to change the way it scrolls*/,
+			});
+
+      ScrollReveal().reveal('.circle-1', {
+				delay: 200,
+				origin: 'top' /*how to change the way it scrolls*/,
+			});
+
+      ScrollReveal().reveal('.circle-2', {
+				delay: 300,
+				origin: 'top' /*how to change the way it scrolls*/,
+			});
+
+      ScrollReveal().reveal('.circle-3', {
+				delay: 400,
+				origin: 'top' /*how to change the way it scrolls*/,
+			});
+
+      ScrollReveal().reveal('.circle-4', {
+				delay: 500,
+				origin: 'top' /*how to change the way it scrolls*/,
+			});
+
+</script>
+
+  <script>
+    ScrollReveal({
+				//reset: true,
+				distance: '60px',
+				duration: 2500,
+				delay: 400,
+			});
+
+      ScrollReveal().reveal('.section-title', {
+				delay: 500,
+				origin: 'left'
+			});
 </script>
 
 </body>
