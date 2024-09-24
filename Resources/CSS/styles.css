@@ -363,3 +363,81 @@ hr {
 .text-container h3 {
   font-size: 4em;
 }
+
+/* Project boxes */
+
+.container-7 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  width: 50%;
+  perspective: 700px;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2em;
+}
+
+.boxx {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 16px 14px 10px #3d3c3c;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  transform-style: rotateY(0deg);
+  transition: transform 0.9s ease;
+}
+
+.boxx:hover {
+  transform: rotateY(360deg);
+  cursor: pointer;
+}
+
+.boxx::before {
+  content: '';
+  background-image: conic-gradient(#4ff346 20deg,
+  transparent 120deg);
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 8s linear infinite;
+}
+
+.boxx::after {
+  content: '';
+  width: 190px;
+  height: 190px;
+  background: #888787;
+  position: absolute;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  filter: blur(3px);
+  font-size: larger;
+  letter-spacing: 5px;
+  box-shadow: inset 30px 30px 10px #0000009c;
+  z-index: 2;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
