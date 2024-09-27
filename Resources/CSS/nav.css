@@ -32,8 +32,8 @@ main {
 }
 
 .navbar {
-  /* width: 5rem;
-  height: 100vh; */
+  width: 5rem;
+  height: 100vh; 
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
@@ -46,6 +46,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .nav-item {
@@ -120,13 +121,22 @@ main {
 .logo i {
   transform: rotate(0deg);
   transition: transform var(--transition-speed);
+  color: #000;
+}
+/*
+.nav-link i {
+  color: #cfc2ce;
+} */
+
+.nav-link:hover i {
+  color: #df49a6;
 }
 
 .navbar:hover .logo i {
   transform: rotate(-180deg);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
     width: 5rem;
@@ -138,26 +148,25 @@ main {
 
   .navbar:hover .link-text {
     display: inline;
-    transition: opacity var(--transition-speed);
+  }
+  .navbar:hover .logo-text {
+    left: 0px;
   }
 }
 /* small */
 @media only screen and (max-width: 600px) {
   .navbar {
-    bottom: 0;
-    width: 100vw;
-    height: 5rem;
+    top: 0;
+    width: 4rem;
+    height: 100vh;
   }
-  .logo {
-    display: none;
+  .navbar:hover {
+    width: 16rem;
   }
-  .navbar-nav {
-    flex-direction: row;
+  .navbar:hover .link-text {
+    display: inline;
   }
-  .nav-link {
-    justify-content: center;
-  }
-  main {
-    margin: 0;
+  .navbar:hover .logo-text {
+    left: 0px;
   }
 }

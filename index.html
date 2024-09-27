@@ -8,9 +8,56 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="Resources/js/main.js"></script>
 </head>
 <body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
 
+      <li class="logo">
+        <a href="#" class="nav-link">
+          <i class="fa-solid fa-angles-right"></i>
+          <span class="link-text">NORDEV</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">
+          <i class="fa-solid fa-house" style="color:''"></i>
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="Certification.html" class="nav-link">
+          <i class="fa-solid fa-certificate" style="color:''"></i>
+          <span class="link-text">Certification</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#project" class="nav-link">
+          <i class="fa-solid fa-folder-open" style="color:''"></i>
+          <span class="link-text">Projects</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#skill" class="nav-link">
+          <i class="fa-solid fa-graduation-cap" style="color:''"></i>
+          <span class="link-text">Skills</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=NORIInspired@gmail.com" class="nav-link" target="_blank">
+          <i class="fa-regular fa-address-book" style="color:''"></i>
+          <span class="link-text">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
   <section class="sec-01">
     <div class="container">
       <h2 class="main-title">web title</h2>
@@ -24,15 +71,15 @@
         </div>
       </div>
       <div class="media-icon">
-        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/N0RDEV" target="_blank"><i class="fa-brands fa-github"></i></a>
 
         <a href=""><i class="fa-brands fa-linkedin"></i></a>
 
-        <a href=""><img src="Resources/images/Codecademy Icon.png" alt="CodeCademy icon"></a>
+        <a href="https://www.codecademy.com/profiles/NORIInspired" target="_blank"><img src="Resources/images/Codecademy Icon.png" alt="CodeCademy icon"></a>
   
     </div>
 
-    
+    </div>
   </section>
 
   <div class="text-title-2">
@@ -112,7 +159,7 @@
           
       </div>
       <div class="info">
-        <h3 class="info-title">Skills</h3>
+        <h3 class="info-title" id="skill">Skills</h3>
         <p></p>
       </div>
     </div>
@@ -120,7 +167,7 @@
 </section>
 
 <div class="text-container">
-  <h3>Projects</h3>
+  <h3 id="project">Projects</h3>
 </div>
 
 <div class="container-7">
@@ -229,7 +276,6 @@
 				origin: 'left'
 			});
 </script>
-
 
 </body>
 </html>
