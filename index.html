@@ -66,8 +66,10 @@
           <img src="Resources/images/NORIINSPIRED ICON.png" alt="" />
         </div>
         <div class="text-box">
-          <h3>Hello, I'm an aspiring |</h3>
+          <div class="typing-tex">
+          <h3>Hello, I'm an:<br> <span class="auto-type" style="font-size: 1.3em;"></span></h3>
           <p>You can call me NORIInspired, inspired by my initals, I embarked on my coding journey with FreeCodeCamp, before transitioning to CodeCademy. My focus has been on mastering the fundamentals of HTML, CSS, & JavaScript. <br><br> As I continue to grow, my ultimate goal is to dive into Frontend Development, or explore the creative realm of UI-UX Design. In addition to coding, I spent a year honing my skills in Digital Art, along the way, I've also explored the music field. With a diverse range of creative pursuits, I hope to expand my spectrum even further.</p>
+        </div>
         </div>
       </div>
       <div class="media-icon">
@@ -275,6 +277,21 @@
 				delay: 500,
 				origin: 'left'
 			});
+</script>
+<!-- https://github.com/mattboldt/typed.js/ -->
+<!-- http://www.mattboldt.com/ -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+  var typed = new Typed('.auto-type', {
+    strings: ["Aspiring Coder.", "Aspiring Web Developer.", "Aspiring Web Designer.", "Aspiring Frontend Developer.", "Aspiring Full-Stack Developer."],
+    typeSpeed: 80,
+    backSpeed: 80,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|",
+    smartBackspace: false,
+  });
 </script>
 
 </body>
