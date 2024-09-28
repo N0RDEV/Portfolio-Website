@@ -585,6 +585,10 @@ h4:hover {
   text-decoration: none;
 }
 
+.box a:hover {
+  color: #fff;
+}
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -636,10 +640,6 @@ h4:hover {
 
 .skills img:hover {
   transform: rotate(360deg);
-}
-
-hr {
-
 }
 
 h5 a {
