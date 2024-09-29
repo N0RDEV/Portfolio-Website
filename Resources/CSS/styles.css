@@ -779,6 +779,11 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+.nav-item span:hover {
+  transform: scale(1.5);
+  color: #111901;
+}
+
 .nav-item:last-child {
   margin-top: auto;
 }
@@ -914,6 +919,10 @@ body::-webkit-scrollbar-thumb {
     transform: rotateY(360deg);
   }
 
+}
+
+.typed-cursor {
+  font-size: 1em;
 }
 
 
