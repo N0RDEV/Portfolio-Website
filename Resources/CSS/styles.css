@@ -13,7 +13,8 @@ html {
 }
 
 body {
-  background-color: #374d3c;
+  /* background-color: #374d3c; */
+  background: radial-gradient(circle, rgb(55, 68, 20), #374d3c);
   display: flex;
   flex-direction: column;
   align-items: center;
